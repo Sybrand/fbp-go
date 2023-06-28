@@ -148,11 +148,11 @@ class HomePageState extends State<HomePage> {
                 _changeSection(Section.advanced);
               }),
           // TODO: Would be nice to have FWI
-          ListTile(
-              title: const Text('Fire Weather Index (FWI)'),
-              onTap: () {
-                _changeSection(Section.fwi);
-              }),
+          // ListTile(
+          //     title: const Text('Fire Weather Index (FWI)'),
+          //     onTap: () {
+          //       _changeSection(Section.fwi);
+          //     }),
           ListTile(
               title: const Text('About'),
               onTap: () {
