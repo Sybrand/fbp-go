@@ -88,8 +88,9 @@ Who wants to run rosetta? That's nuts. Rather get the latest version of ruby and
 This also solves having to run sudo with gem, everything neatly goes into .rbenv
 
 ```zsh
-rbenv install 3.1.0
-rbenv global 3.1.0
+rbenv install --list
+rbenv install 3.2.2
+rbenv global 3.2.2
 gem update --system
 gem install cocoapods
 ```
@@ -107,6 +108,14 @@ pod install
 For rbenv you need to have the shim in your path.
 
 PATH="/{home}/.rbenv/shims:$PATH
+
+If you're using macports, you can get rbenv in place thusly:
+
+```zsh
+sudo port selfupdate
+sudo port upgrade outdated
+sudo port install rbenv ruby-build
+```
 
 ## App store issues
 
@@ -193,6 +202,10 @@ The FBP System is based on observations of experimental fires and wildfires. The
 - [ ] Tech: Automated build (apk + appbundle) in github workflow.
 - [ ] FBP: In B.C. the standard is to use degrees, minutes and seconds for coordinates.
 - [ ] FBP: Consider : decimal places on wind direction and aspect aren't useful, e.g. SSE can be 157 degrees, we don't need 157.5
+
+### v1.0.x (forking!)
+- [ ] Fractional FWI input.
+- [ ] Significant digits on FFMC.
 
 ### v1.0.10 (current)
 - [x] New cert and profile for signing and distributing app
