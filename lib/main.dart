@@ -153,7 +153,8 @@ class HomePageState extends State<HomePage> {
                 _changeSection(Section.fbp);
               }),
           ListTile(
-              title: const Text('Fire Weather Index (FWI)'),
+              // title: const Text('Fire Weather Index (FWI)'),
+              title: const Text('Fine Fuel Moisture Code (FFMC)'),
               onTap: () {
                 _changeSection(Section.fwi);
               }),
