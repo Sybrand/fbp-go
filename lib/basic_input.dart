@@ -218,7 +218,7 @@ class BasicInputState extends State<BasicInputWidget> {
                 label:
                     '${degreesToCompassPoint(_input.waz)} ${_input.waz}\u00B0',
                 onChanged: (value) {
-                  print('_onWAZChanged: ${value}');
+                  print('_onWAZChanged: $value');
                   _onWAZChanged(value);
                 },
               )),

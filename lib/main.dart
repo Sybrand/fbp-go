@@ -102,18 +102,17 @@ class HomePageState extends State<HomePage> {
     const double edgeInset = 3;
     switch (section) {
       case (Section.about):
-        return SingleChildScrollView(
-            padding: const EdgeInsets.only(left: edgeInset, right: edgeInset),
+        return const SingleChildScrollView(
+            padding: EdgeInsets.only(left: edgeInset, right: edgeInset),
             child: Column(
-              children: const [AboutPage()],
+              children: [AboutPage()],
             ));
       case (Section.advanced):
-        return Center(
+        return const Center(
             child: SingleChildScrollView(
-                padding:
-                    const EdgeInsets.only(left: edgeInset, right: edgeInset),
+                padding: EdgeInsets.only(left: edgeInset, right: edgeInset),
                 child: Column(
-                  children: const [AdvancedFireBehaviourPredictionForm()],
+                  children: [AdvancedFireBehaviourPredictionForm()],
                 )));
       case (Section.fwi):
         return Container(
