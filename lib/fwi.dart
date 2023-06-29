@@ -168,10 +168,10 @@ class FWIFormState extends State<FWIForm> {
                     value: _prec,
                     min: 0,
                     max: 100,
-                    divisions: 100,
+                    divisions: 200,
                     label: '$_prec',
                     onChanged: (double value) {
-                      _onPrecChanged(value.roundToDouble());
+                      _onPrecChanged(double.parse(value.toStringAsFixed(1)));
                     },
                     activeColor: Colors.blue,
                   ),
@@ -181,7 +181,7 @@ class FWIFormState extends State<FWIForm> {
               Row(
                 children: [
                   Text(
-                      'Next Day FFMC ${ffmcCalc(_ffmc, _temp, _rh, _ws, _prec)}')
+                      'Next Day FFMC ${ffmcCalc(_ffmc, _temp, _rh, _ws, _prec).toStringAsFixed(2)}')
                 ],
               ),
             ]))
